@@ -1,5 +1,5 @@
 # Console Lab Level 1
-
+Lab complete
 ## Objectives
 
 1. In this lab students will learn to navigate their file system using only the terminal
@@ -96,7 +96,7 @@ There are many text editors out there. We will be using an editor called VIM (sh
 
 - `:w` - Write; writes the current contents of the buffer (editor) to a file. 
 - `:q` - Quit; Quits VIM. Complains if you have unsaved changes (use `:w` first, or `:q!` to force quit and abandon your changes)
-- `:set number`/`:set nonumber` - Enables/disables line numbers.
+- 1`:set number`/`:set nonumber` - Enables/disables line numbers.
 - `a` - Switch to insert mode after the current character. `A` goes to the end of the line instead.
 - `i` - Switch to insert mode before the current character. `I` goes to the beginning of the line instead
 - `x` - Delete the character under the cursor.
@@ -104,7 +104,7 @@ There are many text editors out there. We will be using an editor called VIM (sh
 - `h``j``k``l` - Work like the left, down, up, and right arrow keys respectively.
 
 -
-
+w
 - Let's create a file with vim. Start by opening the program with the `vim` command.
 - This is the editor screen. VIM has two modes, insert mode and normal mode; it starts in normal mode. The `esc` key switches to normal mode from insert mode but not the other way -- if you ever get lost just hit escape.
 - We want to create a file, but we don't need anything in it yet. To save your current file you can use the `:w` command from normal mode. Type `:w myfile6` to save this empty file as "myfile6"
@@ -119,7 +119,7 @@ There are many text editors out there. We will be using an editor called VIM (sh
 
 #### Creating directories
 
-
+w
 - Use `mkdir` to make a directory with your name
 - make two more directories inside of that one called "dir1" and "dir2"
 - You can make directories in other places than your current directory, without `cd`ing into it, make a directory inside dir1. When you give the location of a file or directory relative to your current position that's called a relative path
@@ -127,9 +127,10 @@ There are many text editors out there. We will be using an editor called VIM (sh
 
 ### Copying, moving, and renaming
 - use the `cp` command to copy the file you wrote in the last section. Try using the man file for cp to see what the correct syntax is (anything between [] braces is optional)
-- Make a new directory and then move the copied file you just created into that directory using the `mv` command.
+x- Make a new directory and then move the copied file you just created into that directory using the `mv` command.
 - Let's change the name of that file. The `mv` command doesn't have to move a file to a new location; it can simply change the name of the file in place. Change the name to something that starts with a dot (.) such as ".myFile"
-- Now check the contents of your directory with `ls`. Where is the file you just renamed? In Linux and Unix systems, files and directories with names starting in "." are hidden, so by renaming your file you actually made it a hidden file. Let's see how we can view hidden files with `ls`
+- Now check the contents of your directory with `ls`. Where is the file you just renamed? In Lin10
+ux and Unix systems, files and directories with names starting in "." are hidden, so by renaming your file you actually made it a hidden file. Let's see how we can view hidden files with `ls`
 - The `man` command lets you view the man(ual) pages for any command that is documented. Try viewing the man pages for ls, cp, and mv. Once you've looked at each of these and have a feel for how they are laid out, take another look at the ls man page and see if you can figure out how to view hidden files (remember, hidden files begin with a dot '.' ) <sub>**hint**: viewing man pages is like using less; you can move up and down in the file with the keyboard and when you want to exit you can press the 'q' key*</sub>
 
 ### Destroying files and directories
